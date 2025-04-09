@@ -1,0 +1,13 @@
+{
+    "Name": "HP-EliteBookUltra",
+    "Description": "HP EliteBook Ultra Drivers",
+    "Class": "WinPEDriver",
+    "Manufacturer": "HP",
+    "ManufacturerVersion": "1.0",
+    "ReleaseDate":  "2025-01-04T00:00:00Z",
+    "SupportUrl": "https://support.hp.com/us-en/drivers/hp-elitebook-ultra-14-inch-g1q-notebook-ai-pc/2102217417",
+    "DriverUrl": "https://ftp.hp.com/pub/softpaq/sp112501-113000/sp112504.exe",
+    "id":  "4c42bf01-f0fd-4965-b975-85133957dab8",
+    "Contributor": "OSDeploy",
+    "ContributorName": "Segura"
+}
