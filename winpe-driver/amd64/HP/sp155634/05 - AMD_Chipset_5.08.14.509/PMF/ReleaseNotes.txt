@@ -1,0 +1,105 @@
+
+               AMD PMF Driver Release Notes
+              ------------------------------------
+
+Copyright
+---------
+(c) Copyright 2023 Advanced Micro Devices, Inc.  All rights reserved.
+
+
+Installation Notes:
+------------------
+Install via Windows Device Manager as outlined in the Readme.txt file
+
+Revision History:
+-----------------
+AMDPMF v23.2.3.0
+- BSOD 7E fix
+
+AMDPMF v23.2.3.0
+- BSOD due to smu p3t update fix
+
+AMDPMF v23.2.2.15
+- BSOD 0xA fix
+- Remove event logs from services
+
+AMDPMF v23.2.2.14
+- BSOD 0x1E / 0x133 fix
+- fan and power policy action fix on error
+
+AMDPMF v23.2.2.13
+- S4 / reboot time reduction
+- BSOD 3B fix
+- BIOS output fix
+- Static loading fix
+
+AMDPMF v23.2.2.12
+- bug fixes
+
+AMDPMF v23.2.2.11
+- bug fixes
+
+AMDPMF v23.2.2.10
+- TA enabled by default, bug fixes
+
+AMDPMF v23.2.2.8
+- Idle power fixes, long reboot / shutdown fix
+
+AMDPMF v23.2.2.7
+- Teams power mitigation feature updated
+
+AMDPMF v23.2.2.6
+- TA fixes
+- amdpmfservice long reboot fix
+
+AMDPMF v23.2.2.5
+- TA disabled by default
+- Teams power mitigation feature added
+
+AMDPMF v22.2.2.4
+- bux fixes
+
+AMDPMF v22.2.2.3
+- bux fixes
+
+AMDPMF v22.2.2.2
+- app detect fixes for ASM
+- sensor data fixes
+- general stability fixes
+
+AMDPMF v22.2.2.1
+- TA enabled via regkey TaLoad = 1
+- ASM enabled
+
+AMDPMF v22.2.2.0
+- smart PC logic changes
+- smart PC binary structure has changed, please use conversion script to update old policies
+- general stability fixes
+
+AMDPMF v22.2.1.0
+- ASM 2.0 PMF changes ready
+- smart PC additions
+- ta disabled by default
+- s0i3 reboot fixes
+- heartbeat bsod fix
+- services updated to 1.0.0.7
+
+AMDPMF v22.2.0.0
+- new versioning used for PHX
+- heartbeat s4 bsod fixed
+- camera status feature enabled
+- dynamic PPM enabled
+- partial smart PC enablement
+- services updated to 1.0.0.6
+
+AMDPMF v22.0.2.101
+- Fixed PHX load on newer SMU FW
+- RMB+ additions added to PHX
+
+AMDPMF v22.0.2.1
+- Initial PHX PMF release
+- TA Deadlock updated
+- TA all actions available
+- Dynamic Policy support
+- BSOD fixes
+- EMI only on PHX+

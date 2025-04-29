@@ -1,0 +1,79 @@
+
+               AMD PMF Driver Release Notes
+              ------------------------------------
+
+Copyright
+---------
+(c) Copyright 2022 Advanced Micro Devices, Inc.  All rights reserved.
+ 
+                  
+Installation Notes:
+------------------
+Install via Windows Device Manager as outlined in the Readme.txt file
+
+Revision History:
+-----------------
+AMDPMF v22.0.1.3
+- Enable app detection for policy builder
+- Fix BSOD KERN_MODE_HEAP_CORRUPTION in deleting policies
+- Fix incorrect power slider settings after switching AC/DC
+- Fix high idle power consumption caused by PMF idle service
+- Add support to initiate S0i3 through policy builder
+
+
+AMDPMF v22.0.1.2
+- Allow driver disable static power slider
+- Fix incorrect display information in SDK
+- Fix BSOD in PMF heartbeat signal
+- Fix policy evalution logic. Deleting a second higher indexed policy the lower one will apply
+- Fix user engaged detection
+
+
+AMDPMF v22.0.1.1
+Bug fix 
+
+
+AMDPMF v22.0.1.0
+Bump version to 22.0.1.0
+Bug fix
+
+
+AMDPMF v21.0.2.0
+Add Idle Service
+Add Smart PC Solution Builder command line support
+
+AMDPMF v21.0.1.6
+Fix BSOD 0x9F during driver installation
+
+AMDPMF v21.0.1.5
+Bug fix
+
+AMDPMF v21.0.1.4
+Fix AC/DC switch issue for CnQF 
+
+AMDPMF v21.0.1.3
+Add S0i3 support
+
+AMDPMF v21.0.1.2
+Add Dynamic Power Slider Support
+Add BIOS support to query OS power slider position
+
+AMDPMF v21.0.1.1
+Update auto mode algorithm
+Fix reset issue
+Add Windows 11 support
+
+AMDPMF v21.0.1.0
+Bump version to 21.0.1.0
+Add priority into auto mode
+
+AMDPMF v21.0.0.8
+Add auto mode support
+Add Static Power Slider support
+Add Smart Sense Solution support
+
+AMDPMF v21.0.0.0
+Initial release
+Add HWID AMDI0100 Support
+
+

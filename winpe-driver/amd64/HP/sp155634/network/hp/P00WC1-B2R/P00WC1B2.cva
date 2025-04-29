@@ -1,0 +1,66 @@
+﻿[CVA File Information]
+CVATimeStamp=20210503T213818
+CVASyntaxVersion=2.1A9
+
+[Software Title]
+US=All_Docks-Ethernet_Driver
+
+[US.Software Description]
+This package provides the Ethernet driver for the external dock in the supported notebook/laptop models and operating systems.
+
+[General]
+PN=P00WC1-B2R
+Version=2.0.0.1
+Revision=A
+Pass=1
+Type=Driver
+Category=Driver - Network
+TargetPartition=
+SystemMustBeRebooted=0
+VendorName=HP Inc.
+VendorVersion=2.0.0.1
+
+[SupportedLanguages]
+Languages=GLOBAL
+Countries=GBL
+
+[ProfessionalInnovations]
+HPPI=No
+LearnMore=
+
+[Softpaq]
+SoftpaqNumber=
+SupersededSoftpaqNumber=
+SoftPaqMD5=
+
+[DetailFileInformation]
+e2f68.sys=<DRIVERS>,0x0001,0x0000,0x0002,0x000E,WT64
+e2f68.sys=<DRIVERS>,0x0001,0x0000,0x0002,0x000E,WTIOT64
+rtux64w10.sys=<DRIVERS>,0x000A,0x002D,0x0134,0x07E5,WT64
+rtux64w10.sys=<DRIVERS>,0x000A,0x002D,0x0134,0x07E5,WTIOT64
+
+[Devices_INFPath]
+WT64_INFPath=src\Drivers
+WTIOT64_INFPath=src\Drivers
+
+
+[System Information]
+
+[Operating Systems]
+WT64=OEM
+WTIOT64=OEM
+WTIOTLTS19ENT64=OEM
+WZ64=OEM
+
+[Install Execution]
+Install=install.cmd
+SilentInstall="install.cmd"
+
+[Private]
+Private_SSMCompliant=1
+DPB_Compliant=1
+
+[CVAToolDocumentStamp]
+Generate By CVA Tool V1.1.0.5; Spec V2.1 A9 on 5/3/2021 9:38:18 PM
+Copyright © 2021 HP Development Company, L.P.
+

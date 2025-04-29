@@ -1,0 +1,69 @@
+﻿[CVA File Information]
+CVATimeStamp=20201012T142926
+CVASyntaxVersion=2.1A9
+
+[Software Title]
+US=Aquantia NIC Driver - Z2 G4 WKS
+
+[US.Software Description]
+Aquantia Z2 G4
+
+[General]
+PN=P00SRF-B2G
+Version=2.2.1.0
+Revision=G
+Pass=1
+Type=Driver
+Category=Driver - Network
+TargetPartition=
+SystemMustBeRebooted=0
+VendorName=Intel
+VendorVersion=2.2.1.0
+
+[SupportedLanguages]
+Languages=GLOBAL
+Countries=GBL
+
+[ProfessionalInnovations]
+HPPI=No
+LearnMore=
+
+[Softpaq]
+SoftpaqNumber=
+SupersededSoftpaqNumber=
+SoftPaqMD5=
+
+[DetailFileInformation]
+aqnic650.sys=<DRIVERS>\,0x0002,0x0001,0x0015,0x0000.WT64
+
+[Devices_INFPath]
+WT64_INFPath=src\Drivers
+
+[Devices]
+PCI\VEN_1D6A&DEV_D108&SUBSYS_00011D6A="aquantia"
+PCI\VEN_1D6A&DEV_07B1&SUBSYS_00011D6A="aquantia"
+PCI\VEN_1D6A&DEV_07B1&SUBSYS_873E103C="aquantia"
+
+[System Information]
+SysId01=0x8455
+SysName01=HP Z2 Tower G4 Workstation
+SysId02=0x8456
+SysName02=HP Z2 SFF G4 Workstation
+SysId03=0x8457
+SysName03=HP Z2 Mini G4 Entry Workstation
+
+[Operating Systems]
+WT64=OEM
+
+[Install Execution]
+Install=
+SilentInstall="install.cmd"
+
+[Private]
+Private_SSMCompliant=1
+DPB_Compliant=1
+
+[CVAToolDocumentStamp]
+Generate By CVA Tool V1.1.0.5; Spec V2.1 A9 on 10/12/2020 2:29:26 PM
+Copyright © 2020 HP Development Company, L.P.
+

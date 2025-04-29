@@ -1,0 +1,120 @@
+﻿[CVA File Information]
+CVATimeStamp=20211019T041835
+CVASyntaxVersion=2.1A9
+
+[Software Title]
+US=Intel Network Card Drivers Windows 10 64-Bit Z2 G4 WKS
+
+[US.Software Description]
+This package contains the driver for the Intel LAN on Motherboard (LOM) Network Interface in supported workstation models running a supported operating system.
+
+[General]
+PN=P011J3-B2C
+Version=R26.4
+Revision=C
+Pass=1
+Type=Driver
+Category=Driver - Network
+TargetPartition=
+SystemMustBeRebooted=0
+VendorName=Intel
+VendorVersion=R26.4
+
+[SupportedLanguages]
+Languages=GLOBAL
+Countries=GBL
+
+[ProfessionalInnovations]
+HPPI=No
+LearnMore=
+
+[Softpaq]
+SoftpaqNumber=
+SupersededSoftpaqNumber=
+SoftPaqMD5=
+
+[DetailFileInformation]
+e1d68x64.sys=<DRIVERS>\,0x000C,0x0013,0x0001,0x0025,WT64
+e1r68x64.sys=<DRIVERS>\,0x000C,0x0012,0x000C,0x0001,WT64
+e2f68.sys=<DRIVERS>\,0x0001,0x0000,0x0002,0x0013,WT64
+i40ea68.sys=<DRIVERS>\,0x0001,0x0010,0x003E,0x0000,WT64
+i40eb68.sys=<DRIVERS>\,0x0001,0x0010,0x003E,0x0000,WT64
+ixn68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,WT64
+ixs68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,WT64
+ixt68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00E4,0x0000,WT64
+sxa68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,WT64
+sxb68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,WT64
+vxn68x64.sys=<DRIVERS>\,0x0002,0x0001,0x00E6,0x0000,WT64
+vxs68x64.sys=<DRIVERS>\,0x0002,0x0001,0x00E6,0x0000,WT64
+e1d68x64.sys=<DRIVERS>\,0x000C,0x0013,0x0001,0x0025,W11
+e1r68x64.sys=<DRIVERS>\,0x000C,0x0012,0x000C,0x0001,W11
+e2f68.sys=<DRIVERS>\,0x0001,0x0000,0x0002,0x0013,W11
+i40ea68.sys=<DRIVERS>\,0x0001,0x0010,0x003E,0x0000,W11
+i40eb68.sys=<DRIVERS>\,0x0001,0x0010,0x003E,0x0000,W11
+ixn68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,W11
+ixs68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,W11
+ixt68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00E4,0x0000,W11
+sxa68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,W11
+sxb68x64.sys=<DRIVERS>\,0x0004,0x0001,0x00EF,0x0000,W11
+vxn68x64.sys=<DRIVERS>\,0x0002,0x0001,0x00E6,0x0000,W11
+vxs68x64.sys=<DRIVERS>\,0x0002,0x0001,0x00E6,0x0000,W11
+
+[Devices_INFPath]
+WT64_INFPath=src\Driver
+W11_INFPath=src\driver
+
+[Devices]
+PCI\VEN_8086&DEV_15BB=I219
+PCI\VEN_8086&DEV_15B7=Intel 10G NIC
+PCI\VEN_8086&DEV_1076=Intel Tabor III
+PCI\VEN_8086&DEV_107C=Intel PRO 1000 GT
+PCI\VEN_8086&DEV_10B9=Intel PRO 1000 PT
+PCI\VEN_8086&DEV_105E=HP NC360T Dual Port
+PCI\VEN_8086&DEV_10D3=Intel CT Gigabit NIC
+PCI\VEN_8086&DEV_10EF=WG82578DM
+PCI\VEN_8086&DEV_10FB=Intel 10GB Fiber NIC
+PCI\VEN_8086&DEV_1521=Intel 361T Gigabit NIC
+PCI\VEN_8086&DEV_153A=Intel LOM
+PCI\VEN_8086&DEV_153B=Intel LOM
+PCI\VEN_8086&DEV_1533=Intel I210 Desktop Adapter
+PCI\VEN_8086&DEV_15A0=Intel(R) Ethernet Connection (2) I218-LM
+PCI\VEN_8086&DEV_1528="Intel X540 10G NIC"
+PCI\VEN_8086&DEV_1502=Intel 82579LM Gigabit NIC
+PCI\VEN_8086&DEV_1572= Intel(R) Ethernet Controller X710 for 10GbE SFP+
+PCI\VEN_8086&DEV_1563=Intel(R) Ethernet Controller X550
+PCI\VEN_8086&DEV_15B9=Intel(R) Ethernet Connection I219-LM
+PCI\VEN_8086&DEV_15B8=Intel i219 V
+PCI\VEN_8086&DEV_0D4C=Intel i219
+PCI\VEN_8086&DEV_37CC=x722
+PCI\VEN_8086&DEV_37D1=x722
+PCI\VEN_8086&DEV_37D2=x722
+PCI\VEN_8086&DEV_15F3=I225V
+PCI\VEN_8086&DEV_15F2=I225
+PCI\VEN_8086&DEV_15FC=Intel i219 V
+PCI\VEN_8086&DEV_1A1C=I219 G9
+PCI\VEN_8086&DEV_15F9="I219LM"
+
+[System Information]
+SysId01=0x8455
+SysName01=HP Z2 Tower G4 Workstation
+SysId02=0x8456
+SysName02=HP Z2 SFF G4 Workstation
+SysId03=0x8457
+SysName03=HP Z2 Mini G4 Entry Workstation
+
+[Operating Systems]
+W11=OEM
+WT64=OEM
+
+[Install Execution]
+Install=
+SilentInstall="install.cmd"
+
+[Private]
+Private_SSMCompliant=1
+DPB_Compliant=1
+
+[CVAToolDocumentStamp]
+Generate By CVA Tool V1.0.0.0; Spec V2.1 A9 on 10/19/2021 4:18:35 AM
+Copyright © 2021 HP Development Company, L.P.
+

@@ -1,0 +1,116 @@
+﻿[CVA File Information]
+CVATimeStamp=20230104T214629
+CVASyntaxVersion=2.1A9
+
+[Software Title]
+US=Intel NIC Driver
+
+[US.Software Description]
+This package provides the Intel Ethernet Network Interface Card (NIC) drivers for supported computer models that are running a supported Windows 10 or Windows 11 operating system.
+
+[General]
+PN=P00ZUE-B2V
+Version=12.19.2.50
+Revision=P
+Pass=6
+Type=Driver
+Category=Driver - Network
+TargetPartition=
+SystemMustBeRebooted=0
+VendorName=Intel
+VendorVersion=12.19.2.50
+
+[SupportedLanguages]
+Languages=GLOBAL
+Countries=GBL
+
+[ProfessionalInnovations]
+HPPI=No
+LearnMore=
+
+[Softpaq]
+SoftpaqNumber=
+SupersededSoftpaqNumber=
+SoftPaqMD5=
+
+[DetailFileInformation]
+IntelI219driver.dll=<DRIVERS>\,0x000C,0x0013,0x0002,0x0032,WT64
+e1r.sys=<DRIVERS>\,0x000D,0x0000,0x000E,0x0000,WT64
+e2f.sys=<DRIVERS>\,0x0001,0x0001,0x0003,0x0022,WT64
+IntelI219driver.dll=<DRIVERS>\,0x000C,0x0013,0x0002,0x0032,W11
+e1r.sys=<DRIVERS>\,0x000D,0x0000,0x000E,0x0000,W11
+e2f.sys=<DRIVERS>\,0x0001,0x0001,0x0003,0x0022,W11
+IntelI219driver.dll=<DRIVERS>\,0x000C,0x0013,0x0002,0x0032,WTIOT64
+e1r.sys=<DRIVERS>\,0x000D,0x0000,0x000E,0x0000,WTIOT64
+e2f.sys=<DRIVERS>\,0x0001,0x0001,0x0003,0x0022,WTIOT64
+
+[Devices_INFPath]
+WT64_INFPath=src\Drivers\E1R
+WT64_INFPath=src\Drivers\E1D
+W11_INFPath=src\Drivers\E1R
+W11_INFPath=src\Drivers\E1D
+WTIOT64_INFPath=src\Drivers\E1R
+WTIOT64_INFPath=src\Drivers\E1D
+
+[Devices]
+PCI\VEN_8086&DEV_1533="Intel(R) Beaver Lake (I210) Desktop Adapter"
+PCI\VEN_8086&DEV_156F="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15B7="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15B8="Intel(R) Ethernet Connection I219-V"
+PCI\VEN_8086&DEV_15D7="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15E3="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15B9="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15BD="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15BB="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_0D4C="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_0D4E="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_0D4F="Intel(R) Ethernet Connection I219-V"
+PCI\VEN_8086&DEV_15F2="Intel(R) Ethernet Connection I225-LM"
+PCI\VEN_8086&DEV_15F3="Intel(R) Ethernet Connection I225-V"
+PCI\VEN_8086&DEV_15FC="Intel(R) Ethernet Connection I219-V"
+PCI\VEN_8086&DEV_15FB="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15F9="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_15FA="Intel(R) Ethernet Connection I219-V"
+PCI\VEN_8086&DEV_15BC="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_1A1E="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_1A1F="Intel(R) Ethernet Connection I219-V"
+PCI\VEN_8086&DEV_1A1C="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_0DC7="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_1A1D="Intel(R) Ethernet Connection I219-V"
+PCI\VEN_8086&DEV_0DC8="Intel(R) Ethernet Connection I219-V"
+PCI\VEN_8086&DEV_0DC5="Intel(R) Ethernet Connection I219-LM"
+PCI\VEN_8086&DEV_0DC6="Intel(R) Ethernet Connection I219-V"
+
+[System Information]
+SysId01=0x89C6
+SysName01= 16 Mobile Workstation PC,HP ZBook Fury 16 G9 Mobile Workstation PC
+SysId02=0x8B92
+SysName02=HP ZBook Fury 16 G10 Mobile Workstation PC,16 Mobile Workstation PC
+SysId03=0x8B93
+SysName03= 16 Mobile Workstation PC
+SysId04=0x8B94
+SysName04= 16 Mobile Workstation PC
+SysId05=0x8BD8
+SysName05= 16 Mobile Workstation PC
+
+[Operating Systems]
+W11=OEM
+WT64=OEM
+WTIOT64=OEM
+
+[ReturnCode]
+0:SUCCESS:REBOOT=0
+3010:SUCCESS:REBOOT=3010
+
+[Install Execution]
+Install=install.cmd
+SilentInstall="install.cmd"
+
+[Private]
+Private_SSMCompliant=1
+DPB_Compliant=1
+
+[CVAToolDocumentStamp]
+Generate By CVA Tool V1.0.0.0; Spec V2.1 A9 on 1/4/2023 9:46:29 PM
+Copyright © 2023 HP Development Company, L.P.
+

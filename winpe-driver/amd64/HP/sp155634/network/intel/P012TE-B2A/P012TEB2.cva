@@ -1,0 +1,132 @@
+﻿[CVA File Information]
+CVATimeStamp=20220418T140956
+CVASyntaxVersion=2.1A9
+
+[Software Title]
+US=Intel Network Card Drivers Windows 11 64-Bit WKS
+
+[US.Software Description]
+This package contains the driver for the Intel LAN on Motherboard (LOM) Network Interface in supported workstation models running a supported Windows 11 operating system.
+
+[General]
+PN=P012TE-B2A
+Version=R27.2
+Revision=A
+Pass=1
+Type=Driver
+Category=Driver - Network
+TargetPartition=
+SystemMustBeRebooted=0
+VendorName=Intel
+VendorVersion=R27.2
+
+[SupportedLanguages]
+Languages=GLOBAL
+Countries=GBL
+
+[ProfessionalInnovations]
+HPPI=No
+LearnMore=
+
+[Softpaq]
+SoftpaqNumber=
+SupersededSoftpaqNumber=
+SoftPaqMD5=
+
+[DetailFileInformation]
+i40ea.sys=<DRIVERS>\,0x0001,0x0011,0x0050,0x0000,W11
+i40eb.sys=<DRIVERS>\,0x0001,0x0011,0x0050,0x0000,W11
+e1d.sys=<DRIVERS>\,0x000C,0x0013,0x0002,0x002D,W11
+e1r.sys=<DRIVERS>\,0x000D,0x0000,0x000E,0x0000,W11
+e2fn.sys=<DRIVERS>\,0x0002,0x0001,0x0001,0x0007,W11
+ixs.sys=<DRIVERS>\,0x0004,0x0001,0x00F8,0x0000,W11
+
+[Devices_INFPath]
+W11_INFPath=src\driver
+
+[Devices]
+PCI\VEN_8086&DEV_15BB=I219
+PCI\VEN_8086&DEV_15B7=Intel 10G NIC
+PCI\VEN_8086&DEV_1076=Intel Tabor III
+PCI\VEN_8086&DEV_107C=Intel PRO 1000 GT
+PCI\VEN_8086&DEV_10B9=Intel PRO 1000 PT
+PCI\VEN_8086&DEV_105E=HP NC360T Dual Port
+PCI\VEN_8086&DEV_10D3=Intel CT Gigabit NIC
+PCI\VEN_8086&DEV_10EF=WG82578DM
+PCI\VEN_8086&DEV_10FB=Intel 10GB Fiber NIC
+PCI\VEN_8086&DEV_1521=Intel 361T Gigabit NIC
+PCI\VEN_8086&DEV_153A=Intel LOM
+PCI\VEN_8086&DEV_153B=Intel LOM
+PCI\VEN_8086&DEV_1533=Intel I210 Desktop Adapter
+PCI\VEN_8086&DEV_15A0=Intel(R) Ethernet Connection (2) I218-LM
+PCI\VEN_8086&DEV_1528="Intel X540 10G NIC"
+PCI\VEN_8086&DEV_1502=Intel 82579LM Gigabit NIC
+PCI\VEN_8086&DEV_1572= Intel(R) Ethernet Controller X710 for 10GbE SFP+
+PCI\VEN_8086&DEV_1563=Intel(R) Ethernet Controller X550
+PCI\VEN_8086&DEV_15B9=Intel(R) Ethernet Connection I219-LM
+PCI\VEN_8086&DEV_15B8=Intel i219 V
+PCI\VEN_8086&DEV_0D4C=Intel i219
+PCI\VEN_8086&DEV_37CC=x722
+PCI\VEN_8086&DEV_37D1=x722
+PCI\VEN_8086&DEV_37D2=x722
+PCI\VEN_8086&DEV_15F3=I225V
+PCI\VEN_8086&DEV_15F2=I225
+PCI\VEN_8086&DEV_15FC=Intel i219 V
+PCI\VEN_8086&DEV_1A1C=I219 G9
+PCI\VEN_8086&DEV_15F9="I219LM"
+
+[System Information]
+SysId01=0x81C5
+SysName01= 4 Workstation,HP Z4 G4 Core-X Workstation APJ,HP Z4 G4 Workstation,HP Z4 G4 Workstation APJ,HP Z4 G4 Workstation BRZL
+SysId02=0x81C6
+SysName02= 6 Workstation,HP BU RCTO Z6 G4 Workstation NMIC,HP Z6 G4 Workstation,HP Z6 G4 Workstation APJ
+SysId03=0x81C7
+SysName03= 8 Workstation,HP Z8 G4 Workstation,HP Z8 G4 Workstation APJ,HP Z8 G4 Workstation APJ LL,HP Z8 G4 Workstation LL
+SysId04=0x873E
+SysName04= Central Workstation,HP ZCentral 4R Workstation
+SysId05=0x8750
+SysName05=HP Z2 Tower G5 Workstation
+SysId06=0x8751
+SysName06=HP Z2 Tower G5 Workstation
+SysId07=0x8752
+SysName07=HP Z2 SFF G5 Workstation
+SysId08=0x8753
+SysName08=HP Z2 SFF G5 Workstation
+SysId09=0x8754
+SysName09=HP Z2 Mini G5 Workstation
+SysId10=0x8755
+SysName10=HP Z2 Mini G5 Workstation
+SysId11=0x88BE
+SysName11= Z2 Tower Workstation Desktop PC,HP Z2 G8 Tower Workstation Desktop PC
+SysId12=0x88BF
+SysName12= Z2 SFF Workstation Desktop PC,HP Z2 G8 SFF Workstation Desktop PC
+SysId13=0x88C0
+SysName13=HP Z8 G5 Workstation Desktop PC
+SysId14=0x88C1
+SysName14= 8 Fury Workstation,HP Z8 Fury G5 Workstation Desktop PC
+SysId15=0x895C
+SysName15= 2 Tower Workstation,HP Z2 Tower G9 Workstation Desktop PC
+SysId16=0x895D
+SysName16= 2 SFF Workstation,HP Z2 SFF G9 Workstation Desktop PC
+SysId17=0x895E
+SysName17= 2 Mini Workstation,HP Z2 Mini G9 Workstation Desktop PC
+SysId18=0x8961
+SysName18=HP Z6 G5 Workstation Desktop PC
+SysId19=0x8962
+SysName19=HP Z4 G5 Workstation Desktop PC
+
+[Operating Systems]
+W11=OEM
+
+[Install Execution]
+Install=install.cmd
+SilentInstall="install.cmd"
+
+[Private]
+Private_SSMCompliant=1
+DPB_Compliant=1
+
+[CVAToolDocumentStamp]
+Generate By CVA Tool V1.0.0.0; Spec V2.1 A9 on 4/18/2022 2:09:56 PM
+Copyright © 2022 HP Development Company, L.P.
+

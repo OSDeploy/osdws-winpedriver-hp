@@ -1,0 +1,135 @@
+
+               AMD Micro-PEP Driver Release Notes
+              ------------------------------------
+
+Copyright
+---------
+(c) Copyright 2023 Advanced Micro Devices, Inc.  All rights reserved.
+ 
+                  
+Installation Notes:
+------------------
+Install via Windows Device Manager as outlined in the Readme.txt file
+
+Revision History:
+-----------------
+AMDMICROPEP v1.0.41.0 -
+
+Major changes to this driver package include:
+Release Note:
+- Remove redundant files 
+- Fix log buffer overrun issue
+- Add support for new program
+- Update INF support for new program
+
+AMDMICROPEP v1.0.40.1 -
+
+Major changes to this driver package include:
+Release Note:
+- Support up to 256 devices/controllers
+- Add new CPU ID support
+- Support STP
+- Fix low SW/HW DRIPS issue observed during stress test
+
+AMDMICROPEP v1.0.39.0 -
+
+Major changes to this driver package include:
+Release Note:
+- Update INF file to remove redundant information
+- Fix BSOD 0x1CA and 0xA0 seen on SV2
+
+AMDMICROPEP v1.0.38.0 -
+
+Major changes to this driver package include:
+Release Note:
+- Add support of _HID for new product
+
+AMDMICROPEP v1.0.37.0 -
+
+Major changes to this driver package include:
+Release Note:
+- Support up to 512 devices/controllers
+- Fix bugcheck 0xA0 during Modern Standby Stress Test
+- Support Post Code of SMU Communication 
+
+AMDMICROPEP v1.0.36.0 -
+
+Major changes to this driver package include:
+Release Note:
+- Fix incorrect number of logical processor reported with SMT disabled
+- [PMF] Correct S0i3/S4 notification on S4 resume 
+
+AMDMICROPEP v1.0.35.0 -
+
+Major changes to this driver package include:
+Release Note:
+- Fix 0% HW DRIPS on sustaining platforms (DALI/PLK) when run S0i3 cycles
+
+AMDMICROPEP v1.0.34.0 -
+
+Major changes to this driver package include:
+- Update makefile to support latest WinNXT build
+- Fix bugcheck 0x133 seen during S4 stress test
+- Update indirect accress registers pair
+
+AMDMICROPEP v1.0.33.0 -
+
+Major changes to this driver package include:
+- Update makefile to get rid of stale Win8 DK
+- Fix multi-entry issue when PEP communicates with PMFW
+- Fix DPC issue caused by locking critical resource during S4 resume
+
+AMDMICROPEP v1.0.32.0 -
+
+Major changes to this driver package include:
+- Work around SMU bug that can't record HW DRIPS and SoC Subsystem Accounting info of first S0i3 cycle after system reboot or resume from hibernate
+
+AMDMICROPEP v1.0.31.0 -
+
+Major changes to this driver package include:
+- Follow-up of low HW DRIPS fix on VBS/Hyper-V enabled platform in 1.0.30.0
+- New _HID AMDI0008 support
+
+AMDMICROPEP v1.0.30.0 -
+
+Major changes to this driver package include:
+- Work around inaccurate HW DRIPS (lower than actual value) due to OS limitation when VBS/Hyper-V is enabled
+- Notify AMD PMF driver about S0i3 entry/exit
+
+AMDMICROPEP v1.0.29.0 -
+
+Major changes to this driver package include:
+- Add new HID Support
+- Support /CETCOMPAT linker flag
+- Replace deprecated ExAllocatePoolWithTag() function with ExAllocatePoolUninitialized()
+- New IOCTL calls support
+- Solve potential SBIOS issue when the number of device doesn't match devices in SBIOS array
+- Prepare to switch INDEX/DATA pair to from #6 to #0
+- Add SoC Subsystem Accounting support for new product
+
+AMDMICROPEP v1.0.28.0 -
+
+Major changes to this driver package include:
+- Update AMD Micro PEP Copyright version to 2020 in INF file
+- Add new HID Support.
+- Refine logic of SoC Subsystem Accounting.
+- New post code encoding for PEP driver.
+
+AMDMICROPEP v1.0.27.0 -
+
+Major changes to this driver package include:
+- Enable event tracing by default
+- Enable new option for post code dumping
+- Add callback support of crash dump when system crashes before storage device is restored
+- Refine DRIPS notification sequence
+- Add code to prevent potential deadlock during power transition from sleeping state to S0 state.
+
+AMDMICROPEP v1.0.26.0 -
+
+Major changes to this driver package include:
+- Update AMD Micro PEP Copy Right version to 2020
+- Add interlock control to device object
+- Show IP name for SoC subsystems Accounting
+- Add post code support for BIOS notification
+- Adjust sequence for EC notification
+

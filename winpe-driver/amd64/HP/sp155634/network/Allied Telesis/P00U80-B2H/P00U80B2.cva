@@ -1,0 +1,67 @@
+﻿[CVA File Information]
+CVATimeStamp=20210211T111306
+CVASyntaxVersion=2.1A9
+
+[Software Title]
+US=Allied Telesis 1GbE LC Fiber Driver - Windows 10 x64
+
+[US.Software Description]
+Driver for the Allied Telesis 1GbE LC Fiber 2pc Module
+
+[General]
+PN=P00U80-B2H
+Version=3.8.4.0
+Revision=H
+Pass=1
+Type=Driver
+Category=Driver - Network
+TargetPartition=
+SystemMustBeRebooted=0
+VendorName=Allied Telesis
+VendorVersion=3.8.4.0
+
+[SupportedLanguages]
+Languages=GLOBAL
+Countries=GBL
+
+[ProfessionalInnovations]
+HPPI=No
+LearnMore=
+
+[Softpaq]
+SoftpaqNumber=
+SupersededSoftpaqNumber=
+SoftPaqMD5=
+
+[DetailFileInformation]
+atin650f.sys=<DRIVERS>\,0x0003,0x0008,0x0004,0x0000,WT64
+
+[Devices_INFPath]
+WT64_INFPath=src\Drivers
+
+[Devices]
+PCI\VEN_14E4&DEV_1682&SUBSYS_8458103C=1GbE LC Fiber 2pc Module
+PCI\VEN_14E4&DEV_1682&SUBSYS_298A1259=1GbE LC Fiber 2pc Module
+USB\VID_07C9&PID_0012="flex io"
+
+[System Information]
+SysId01=0x8457
+SysName01=HP Z2 Mini G4 Entry Workstation
+SysId02=0x8458
+SysName02=HP Z2 Mini G4 Performance Workstation
+
+[Operating Systems]
+WT64=OEM
+
+[Install Execution]
+Install=
+SilentInstall="install.cmd"
+
+[Private]
+Private_SSMCompliant=1
+DPB_Compliant=1
+
+[CVAToolDocumentStamp]
+Generate By CVA Tool V1.1.0.5; Spec V2.1 A9 on 2/11/2021 11:13:06 AM
+Copyright © 2021 HP Development Company, L.P.
+
