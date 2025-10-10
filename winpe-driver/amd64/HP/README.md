@@ -9,13 +9,13 @@
 
 | Released | Build | Version | Download |
 |--|--|--|--|
-| 2025.03.27 | sp155634 | 2.72 | https://ftp.ext.hp.com/pub/softpaq/sp155501-156000/sp155634.exe |
+| 2025.08.22 | sp161830 | 3.10 | https://ftp.ext.hp.com/pub/softpaq/sp161501-162000/sp161830.exe |
 
 ---
 
 ## Changelog
 ```
-2025.01.05 - David Segura updated Drivers to the latest version.
+2025.10.10 - Michael Escamilla updated Drivers to the latest version.
 ```
 
 ---
@@ -32,9 +32,9 @@ This package provides the drivers for the integrated and select add-in devices i
 This format is compatible with bare-metal Operating System deployment tools that require INF based drivers.
 
 ## HP Notes:
-HP Business PCs - HP Client Windows PE 10 x64 Driver Packs are not supported in full Windows operating systems.
-HP Client Windows PE 10 x64 Driver Packs are compatible only with the Windows PE operating system.
-HP does not support using HP Client Windows PE 10 x64 Driver Packs when building a full Windows operating system image.
+HP Business PCs - HP Client Windows PE 11 x64 Driver Packs are not supported in full Windows operating systems
+HP Client Windows PE 11 x64 Driver Packs are compatible only with the Windows PE operating system.
+HP does not support using HP Client Windows PE 11 x64 Driver Packs when building a full Windows operating system image.
 If you are running a different Windows operating system, the Windows PE drivers are not compatible, and might not function.
 Select a link below to download an HP WinPE driver pack or its release notes.
 
@@ -44,14 +44,14 @@ Double-click the downloaded file and follow the on-screen instructions to extrac
 Import the contents of the file into a content management tool that supports operating system deployment.
 
 ## Installation Notes:
-TITLE:  HP Client WinPE 10.0 x64 Driver Pack
-VERSION: 2.70
+TITLE:  HP Client WinPE 11.0 x64 Driver Pack
+VERSION: 3.10
 DESCRIPTION: 
 This package contains the drivers necessary for Microsoft Windows PE 10 operating system deployment for supported HP notebook and desktop models. This package provides the drivers for the integrated and select add-in devices in an INF format. This format is compatible with bare-metal Operating System deployment tools that require INF based drivers.
 
     PURPOSE: Routine
-    SoftPaq NUMBER: sp155634
-    EFFECTIVE DATE:  11/12/2024
+    SoftPaq NUMBER: sp161830
+    EFFECTIVE DATE:  08/22/2025
     CATEGORY:  Manageability - Driver Pack
     SSM SUPPORTED:  No
     DEVICES SUPPORTED: N/A
@@ -70,6 +70,8 @@ Includes following 64 bit drivers:
 00 - Intel Serial IO 30.100.2148.1
 00 - Intel Serial IO 30.100.2318.58
 00 - Intel Serial IO 30.100.2405.44
+00 - Intel Serial IO 30.100.2416.40
+00 - Intel Serial IO 30.100.2418.12
 05 - AMD_Chipset_4.04.12.1948
 05 - AMD_Chipset_5.08.14.509
 06 - AMD_USB4_1.0.0.21
@@ -80,6 +82,7 @@ Includes following 64 bit drivers:
 25 - RST 17.9.0.1007
 27 - RST 18.36.2.1023
 28 - RSTVMD 19.5.0.1037
+28 - RSTVMD 20.2.3.1018
 30 - SmartPqi 63.32.0.64
 41 - BayHubTech 1.3.101.1033
 80 - AMD_RAID 7.2.0.00057
