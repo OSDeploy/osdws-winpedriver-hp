@@ -7,6 +7,8 @@ Includes following 64 bit drivers:
 00 - Intel Serial IO 30.100.2148.1
 00 - Intel Serial IO 30.100.2318.58
 00 - Intel Serial IO 30.100.2405.44
+00 - Intel Serial IO 30.100.2416.40
+00 - Intel Serial IO 30.100.2418.12
 05 - AMD_Chipset_4.04.12.1948
 05 - AMD_Chipset_5.08.14.509
 06 - AMD_USB4_1.0.0.21
@@ -17,6 +19,7 @@ Includes following 64 bit drivers:
 25 - RST 17.9.0.1007
 27 - RST 18.36.2.1023
 28 - RSTVMD 19.5.0.1037
+29 - RST 20.2.3.1018
 30 - SmartPqi 63.32.0.64
 41 - BayHubTech 1.3.101.1033
 80 - AMD_RAID 7.2.0.00057
