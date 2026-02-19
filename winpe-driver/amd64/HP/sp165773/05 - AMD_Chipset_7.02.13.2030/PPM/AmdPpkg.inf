@@ -1,0 +1,145 @@
+;*******************************************
+; AmdPpkg.inf
+; AMD Provisioning Packages Driver for Processor and NVMe Power Management
+; Copyright © 2025 Advanced Micro Devices, Inc. All rights reserved.
+;*******************************************
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %ManufacturerName%
+CatalogFile = AmdPpkg.cat
+DriverVer = 12/27/2024,8.0.0.48
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir  = 13
+File_Del_Win10  = 10,Provisioning\Packages ; %SystemRoot%\Provisioning\Packages
+File_Copy_Win10 = 10,Provisioning\Packages ; %SystemRoot%\Provisioning\Packages
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+AmdPpkg.sys = 1,,
+AmdPpkgSvc.exe = 1,,
+AMD.Power.Processor.ppkg = 1,,
+AMD.Power.Processor.2.ppkg = 1,,
+AMD.Power.Processor.NoParking.ppkg = 1,,
+AMD.Power.NVMe.ppkg = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Standard, NTamd64.10.0...14393, NTamd64.10.0...22000, NTamd64.10.0...22621; Windows 10 version 1607, Windows 11 version 21H2, Windows 11 version 22H2
+
+[Standard.NTamd64.10.0...14393]
+%AmdPpkg.DeviceDesc% = InstallSection_Win10, ACPI\AMDI0052
+
+[Standard.NTamd64.10.0...22000]
+%AmdPpkg.DeviceDesc% = InstallSection_Win11_21H2, ACPI\AMDI0052
+
+[Standard.NTamd64.10.0...22621]
+%AmdPpkg.DeviceDesc% = InstallSection_Win11_22H2, ACPI\AMDI0052
+
+[File_Del_Win10]
+AMD.Power.Processor.ppkg
+AMD.Power.NVMe.ppkg
+
+[File_Copy_Win10]
+AMD.Power.Processor.ppkg
+
+[File_Copy_Win11]
+AmdPpkg.sys
+AmdPpkgSvc.exe
+AMD.Power.Processor.ppkg
+AMD.Power.Processor.2.ppkg
+AMD.Power.Processor.NoParking.ppkg
+AMD.Power.NVMe.ppkg
+
+[InstallSection_Win10.NT]
+CopyFiles = File_Copy_Win10
+
+[InstallSection_Win11_21H2.NT]
+DelFiles  = File_Copy_Win10
+CopyFiles = File_Copy_Win11
+
+[InstallSection_Win11_22H2.NT]
+DelFiles  = File_Del_Win10
+CopyFiles = File_Copy_Win11
+
+;-------------- Service installation
+[InstallSection_Win10.NT.Services]
+AddService = ,%SPSVCINST_ASSOCSERVICE%
+
+[InstallSection_Win11_21H2.NT.Services]
+AddService = AmdPpkg,    %SPSVCINST_ASSOCSERVICE%,  AmdPpkg_Inst
+AddService = AmdPpkgSvc, %SPSVCSINST_STARTSERVICE%, AmdPpkgSvc_Inst_Win11_21H2
+
+[InstallSection_Win11_22H2.NT.Services]
+AddService = AmdPpkg,    %SPSVCINST_ASSOCSERVICE%,  AmdPpkg_Inst
+AddService = AmdPpkgSvc, %SPSVCSINST_STARTSERVICE%, AmdPpkgSvc_Inst_Win11_22H2
+
+; -------------- AmdPpkg driver install sections
+[AmdPpkg_Inst]
+DisplayName    = %AmdPpkg.DisplayName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\AmdPpkg.sys
+
+[AmdPpkgSvc_Inst_Win11_21H2]
+DisplayName    = %AmdPpkgSvc.DisplayName%
+Description    = %AmdPpkgSvc.Description%
+ServiceType    = 0x10            ; SERVICE_WIN32_OWN_PROCESS
+StartType      = 2               ; SERVICE_AUTO_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\AmdPpkgSvc.exe
+Dependencies   = AmdPpkg
+AddReg    = AddReg_Win11_21H2
+
+[AmdPpkgSvc_Inst_Win11_22H2]
+DisplayName    = %AmdPpkgSvc.DisplayName%
+Description    = %AmdPpkgSvc.Description%
+ServiceType    = 0x10            ; SERVICE_WIN32_OWN_PROCESS
+StartType      = 2               ; SERVICE_AUTO_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\AmdPpkgSvc.exe
+Dependencies   = AmdPpkg
+AddReg    = AddReg_Win11_22H2
+
+[AddReg_Win11_21H2]
+HKR,,AMDInstalledPpkgFiles,%REG_MULTI_SZ%,AMD.Power.Processor.ppkg
+HKR,,LastCpu,%REG_SZ%,
+HKR,,LastCpuTime,%REG_SZ%,
+
+[AddReg_Win11_22H2]
+HKR,,AMDInstalledPpkgFiles,%REG_MULTI_SZ%,AMD.Power.Processor.2.ppkg,AMD.Power.NVMe.ppkg
+HKR,,LastCpu,%REG_SZ%,
+HKR,,LastCpuTime,%REG_SZ%,
+
+[Strings]
+;
+; Non-Localizable Strings
+;
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SPSVCINST_ASSOCSERVICE  = 0x00000002
+SPSVCSINST_STARTSERVICE = 0x00000800
+
+;
+; Localizable Strings
+;
+ManufacturerName       = "Advanced Micro Devices, Inc."
+DiskName               = "AMD Provisioning Packages Installation Disk"
+AmdPpkg.DeviceDesc     = "AMD Provisioning Packages"
+AmdPpkg.DisplayName    = "AMD Provisioning Packages"
+AmdPpkgSvc.DisplayName = "AMD Provisioning Packages Service"
+AmdPpkgSvc.Description = "Manages AMD provisioning packages, including processor and NVMe power management."
+

@@ -1,0 +1,105 @@
+﻿[CVA File Information]
+CVATimeStamp=20251102T182746
+CVASyntaxVersion=2.1A9
+
+[Software Title]
+US=Intel Ethernet NetAdapterCx Driver
+
+[US.Software Description]
+This package provides the Intel NetAdapterCx Ethernet Network Interface Card (NIC) drivers for supported computer models that are running Windows 11 operating system.
+
+[General]
+PN=P019F9-B2D
+Version=20.0.3.16
+Revision=A
+Pass=1
+Type=Driver
+Category=Driver - Network
+TargetPartition=
+SystemMustBeRebooted=0
+VendorName=Intel
+VendorVersion=20.0.3.16
+
+[SupportedLanguages]
+Languages=GLOBAL
+Countries=GBL
+
+[ProfessionalInnovations]
+HPPI=No
+LearnMore=
+
+[Softpaq]
+SoftpaqNumber=
+SupersededSoftpaqNumber=
+SoftPaqMD5=
+
+[DetailFileInformation]
+IntelI219driver.dll=<DRIVERS>\,0x0014,0x0000,0x0003,0x0010,W11
+IntelI219driver.dll=<DRIVERS>\,0x0014,0x0000,0x0003,0x0010,W11IOT
+e2fn.sys=<DRIVERS>\,0x0002,0x0001,0x0005,0x0007,W11
+e2fn.sys=<DRIVERS>\,0x0002,0x0001,0x0005,0x0007,W11IOT
+
+[Devices_INFPath]
+W11_INFPath=src\Drivers\e1dn
+W11_INFPath=src\Drivers\e2fn
+W11IOT_INFPath=src\Drivers\e1dn
+W11IOT_INFPath=src\Drivers\e2fn
+
+[Devices]
+PCI\VEN_8086&DEV_1A1F="Intel(R) Ethernet Connection (16) I219-V"
+PCI\VEN_8086&DEV_1A1C="Intel(R) Ethernet Connection (17) I219-LM"
+PCI\VEN_8086&DEV_550A="Intel(R) Ethernet Connection (18) I219-LM"
+PCI\VEN_8086&DEV_550B="Intel(R) Ethernet Connection (18) I219-V"
+PCI\VEN_8086&DEV_550C="Intel(R) Ethernet Connection (19) I219-LM"
+PCI\VEN_8086&DEV_550D="Intel(R) Ethernet Connection (19) I219-V"
+PCI\VEN_8086&DEV_550E="Intel(R) Ethernet Connection (20) I219-LM"
+PCI\VEN_8086&DEV_550F="Intel(R) Ethernet Connection (20) I219-V"
+PCI\VEN_8086&DEV_57A0="Intel(R) Ethernet Connection (24) I219-LM"
+PCI\VEN_8086&DEV_57A1="Intel(R) Ethernet Connection (24) I219-V"
+PCI\VEN_8086&DEV_57B3="Intel(R) Ethernet Connection (25) I219-LM"
+PCI\VEN_8086&DEV_57B4="Intel(R) Ethernet Connection (25) I219-V"
+PCI\VEN_8086&DEV_57B5="Intel(R) Ethernet Connection (26) I219-LM"
+PCI\VEN_8086&DEV_57B6="Intel(R) Ethernet Connection (26) I219-V"
+PCI\VEN_8086&DEV_57B7="Intel(R) Ethernet Connection (27) I219-LM"
+PCI\VEN_8086&DEV_57B8="Intel(R) Ethernet Connection (27) I219-V"
+PCI\VEN_8086&DEV_5510="Intel(R) Ethernet Connection (28) I219-LM"
+PCI\VEN_8086&DEV_5511="Intel(R) Ethernet Connection (28) I219-V"
+PCI\VEN_8086&DEV_57B9="Intel(R) Ethernet Connection (29) I219-LM"
+PCI\VEN_8086&DEV_57BA="Intel(R) Ethernet Connection (29) I219-V"
+PCI\VEN_8086&DEV_15F2="Intel(R) Ethernet Network Connection I225-LM"
+PCI\VEN_8086&DEV_15F3="Intel(R) Ethernet Network Connection I225-V"
+PCI\VEN_8086&DEV_125B="Intel(R) Ethernet Network Connection I226-LM"
+PCI\VEN_8086&DEV_125C="Intel(R) Ethernet Network Connection I226-V"
+
+[System Information]
+SysId01=0x8D10
+SysName01=HP EliteDesk 8 Tower G1i Desktop AI PC,HP EliteDesk 8 Tower G1i E Desktop AI PC,HP EliteDesk 8 Tower G1i E Desktop PC,HP EliteDesk 800 Tower G1i E Desktop PC,HP Z1 Tower G1i Desktop PC
+SysId02=0x8D12
+SysName02=HP EliteDesk 8 SFF G1i Desktop AI PC,HP EliteDesk 8 SFF G1i Desktop PC
+SysId03=0x8D13
+SysName03=HP ProDesk 4 Tower G1i Desktop AI PC,HP ProDesk 4 Tower G1i E Desktop AI PC,HP ProDesk 4 Tower G1i E Desktop PC,HP ProDesk 400 Tower G1i E Desktop PC
+SysId04=0x8D14
+SysName04=HP ProDesk 4 SFF G1i Desktop AI PC,HP ProDesk 4 SFF G1i Desktop PC,HP ProDesk 400 SFF G1i Desktop PC
+SysId05=0x8E89
+SysName05=HP EliteDesk 8 SFF G2a Desktop Next Gen AI PC
+
+[Operating Systems]
+W11=OEM
+W11IOT=OEM
+
+[ReturnCode]
+0:SUCCESS:REBOOT=0
+3010:SUCCESS:REBOOT=3010
+
+[Install Execution]
+Install=install.cmd
+SilentInstall="install.cmd"
+
+[Private]
+Private_SSMCompliant=1
+DPB_Compliant=1
+
+[CVAToolDocumentStamp]
+Generate By CVA Tool V1.0.0.0; Spec V2.1 A9 on 11/02/2025 18:27:46
+Copyright © 2025 HP Development Company, L.P.
+

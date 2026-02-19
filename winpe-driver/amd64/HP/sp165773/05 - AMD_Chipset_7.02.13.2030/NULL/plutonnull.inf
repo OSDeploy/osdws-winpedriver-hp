@@ -1,0 +1,65 @@
+;/*++
+;
+;; Copyright(C) 2024 Advanced Micro Devices, Inc. All rights Reserved.
+;
+;Module Name:
+;    PlutonAmd.INF
+;
+;Abstract:
+;    INF file for installing AMD NULL Driver for Microsoft Pluton Security Processor on Windows 11 23H2 and earlier OS
+;
+;--*/
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = SecurityDevices 
+ClassGuid   = {d94ee5d8-d189-4994-83d2-f68d7d41b0e6}
+Provider    = %AMD%
+PnpLockdown = 1
+DriverVer = 10/23/2024,1.0.0.2
+CatalogFile = plutonnull.cat
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%STD%=Standard,NTamd64.10.0...26100,NTamd64.10.0...14393
+
+[Standard.NTamd64.10.0...26100]
+;empty for 26100 build
+
+[Standard.NTamd64.10.0...14393]
+%Pluton.DeviceDesc%=Null_Pluton_Device, ACPI\MSFT0201
+ 
+;---------------- copy files
+ 
+ 
+[Null_Pluton_Device.NT]
+;empty for null driver
+
+
+[SourceDisksFiles]
+
+[SourceDisksNames]
+1 = %DiskId1%
+
+[DestinationDirs]
+Drivers_Dir = 13 ; DIRID_DRIVERS
+
+
+[Null_Pluton_Device.NT.Services]
+AddService = ,%SPSVCINST_ASSOCSERVICE%
+
+
+;*****************************************
+; Strings Section
+;*****************************************
+
+[Strings]
+AMD                    = "AMD"
+STD                    = "(Standard)"
+SPSVCINST_ASSOCSERVICE = 0x00000002
+Pluton.DeviceDesc      = "AMD NULL Driver for Microsoft Pluton Security Processor"
+Pluton.SvcDesc         = "Pluton Service"
+DiskId1                = "AMD NULL DRIVER for Pluton Security Processor Installation Disk #1"

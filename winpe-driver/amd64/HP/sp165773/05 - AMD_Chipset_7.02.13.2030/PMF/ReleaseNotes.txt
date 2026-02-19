@@ -1,0 +1,220 @@
+
+               AMD PMF Driver Release Notes
+              ------------------------------------
+
+Copyright
+---------
+(c) Copyright 2025 Advanced Micro Devices, Inc.  All rights reserved.
+
+
+Installation Notes:
+------------------
+Install via Windows Device Manager as outlined in the Readme.txt file
+
+Revision History:
+-----------------
+AMDPMF v25.8.10.0
+- unmap memory by ID
+- [Win11 24H2]HLK test pending with screen off during HLK
+- Add VCN_ACTIVITY condition
+- Fix PSP callback in no TA load
+- udpate asm version to 4.8.1.2
+- revert change for Port #1177 edge app detect fix
+
+AMDPMF v25.8.9.0
+- Adjust error messages in brightness agent when WMI brightness is not supported
+
+AMDPMF v25.8.8.0
+- Fix tests build
+- udpate asm version to 4.8.1.1
+- Fix PPM batching
+
+AMDPMF v25.8.7.0
+- Fix PMFLog null error
+- asm binary scripts
+- Fix ppm reset issues on Chiron
+- dynamic load fix
+- Fix TA Tests
+- Reintroduce custom workload
+- updated asm levels
+- added isSet field for inputoverride
+
+AMDPMF v24.8.6.0
+- Fix average moving power in TA
+- Balance profile AGM+TA changes
+
+AMDPMF v24.8.5.0
+- Remove old HIDs from inf
+- Remove NPU support for pre24H2 OS
+- Fix app fullscreen counter
+- Integrate ASM 4.8.0.0
+
+AMDPMF v24.8.4.0
+- Fix ior for pepl lvl and add missing test changes
+- Fix drain rate min/max values
+- Add latest PSP command
+- Do not reset ppm if no change
+- Balance Profile changes
+
+AMDPMF v24.8.3.0
+- dll policy api rework
+- 0x1A PSP Fix
+- reset ppm before shutdown
+- change asm state max value
+- add comparison value for app det condition
+- Expand ASM_LEVEL to 10 levels
+- EMI scheduler changes
+- Update skin temp condition unit to centi-C
+
+AMDPMF v24.8.2.0
+- Fix package install error
+
+AMDPMF v24.8.1.0
+- Add dual asm support
+- Add CETCOMPAT linker flag
+- Reset ppm on shutdown event in service
+- Use full ASM binary version in version comparison
+- changed frequencies for tpm
+
+AMDPMF v24.8.0.0
+- Weekly release
+
+AMDPMF v24.7.5.0
+- Edge app detect fix
+- WDK/SDK Update to 26100
+- Fix OS version in inf
+- Add NPU Qos Hint and force state into PMFlog
+
+AMDPMF v24.7.4.0
+- Service fixes for win2024
+- NPU interface fix
+- Add num column condition for NPU
+- Fix DC BAL powermode NPU hint
+
+AMDPMF v24.7.3.0
+- Update PMFW field names
+- Improve service error handling for npu
+- ACPI updates for ASM Lite
+
+AMDPMF v24.7.2.0
+- AGM log ppm display fix
+- UI-related fixes
+- Port EMI
+
+AMDPMF v24.7.1.0
+- Additional ppm
+- AGM Log fixes for hetero ppm
+
+AMDPMF v24.7.0.0
+- 24.7.0.0 support
+
+AMDPMF v24.6.8.0
+- Add WA for plat issue
+- ASM update to 4.9.1.2
+- Game mode condition added
+- ASM level condition added
+- Energy saver support added
+- ASM NPU QoS hint fixed when ASM is disabled
+- add additional IOR fields for some conditions
+
+AMDPMF v24.6.7.0
+- Added IPU conditions for ASM
+
+AMDPMF v23.6.6.0
+- Smart PC bugfix
+- Add regkey to force IPU powermode
+- PMF stats fix
+
+AMDPMF v23.6.5.0
+- Add PMF Stats
+- Fix CnQF display
+- Service update
+
+AMDPMF v23.6.4.0
+- IPU Support
+
+AMDPMF v23.6.3.0
+- Many bug fixes
+
+AMDPMF v23.6.2.0
+- Many bug fixes
+
+AMDPMF v23.6.1.0
+- Fix SMU unit conversions
+- Add ATST battery method support
+- Fix for app detection not working after S0i3
+
+AMDPMF v23.6.0.0
+- ACPI v2 changes
+- PMFW changes for PMF PPT
+- backend fixes
+
+AMDPMF v23.5.7.0
+- Add alpha filtered power
+- Add battery charge+temp
+- Sensor values fix
+
+AMDPMF v23.5.6.0
+- Driver s0i3 and ta fixes
+
+AMDPMF v23.5.5.0
+- Driver and ta fixes
+
+AMDPMF v23.5.4.0
+- Fixes
+- Remove deprecated features
+
+AMDPMF v23.5.3.0
+- Fixes
+- Updated logging
+
+AMDPMF v23.5.2.0
+- Bug fixes
+
+AMDPMF v23.5.1.0
+- Thermal Sensor Support
+- Logging improvements
+
+AMDPMF v23.5.0.0
+- Smart P3T
+
+AMDPMF v22.3.0.0
+- background constrainer
+- REGKEY condition
+- P_SLIDER_USER condition
+- AGM changes: first column is for SmartPC policies, second is for ASM
+- improvements to PMFUtility custom workload table commands
+- new ASM policies
+- Hearbeat 2.0
+
+AMDPMF v22.2.2.0
+- smart PC logic changes
+- smart PC binary structure has changed, please use conversion script to update old policies
+- general stability fixes
+
+AMDPMF v22.2.1.0
+- ASM 2.0 PMF changes ready
+- smart PC additions
+- ta disabled by default
+- s0i3 reboot fixes
+- heartbeat bsod fix
+- services updated to 1.0.0.7
+
+AMDPMF v22.2.0.0
+- new versioning
+- heartbeat s4 bsod fixed
+- camera status feature enabled
+- dynamic PPM enabled
+- partial smart PC enablement
+- services updated to 1.0.0.6
+
+AMDPMF v22.0.2.101
+- Fixed load on newer SMU FW
+
+AMDPMF v22.0.2.1
+- Initial PMF release
+- TA Deadlock updated
+- TA all actions available
+- Dynamic Policy support
+- BSOD fixes
+- EMI

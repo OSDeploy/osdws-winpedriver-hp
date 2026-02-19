@@ -1,0 +1,95 @@
+; AMDInterface.inf
+;
+; Installation file (.inf) for the AMD Interface.
+;
+; Copyright (c) 2025 Advanced Micro Devices Inc.
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%AMD%
+ClassGUID={4d36e97d-e325-11ce-bfc1-08002be10318}
+Class=System
+CatalogFile=AMDInterface.cat
+DriverVer=01/14/2025, 2.0.0.22
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir   = 12
+
+[Manufacturer]
+%AMD%   = AMD.Mfg, NTX86, NTamd64
+
+;==================================================
+;                   32-bit
+;==================================================
+
+[AMD.Mfg.NTX86]
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_14AC
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_14EC
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_150D
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_14DE
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1002&DEV_145A
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_14DC
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_1556
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_1116
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_1117
+%AMD.DeviceDesc0%  = AMDPCI, PCI\VEN_1022&DEV_1136
+%AMD.DeviceDesc1%  = AMDPCI, PCI\VEN_1022&DEV_790B
+%AMD.DeviceDesc23% = AMDPCI, ACPI\AMDI0104
+
+[AMDPCI]
+AddReg=Install.AddReg
+
+[AMDPCI.Services]
+AddService = , 0x00000002
+
+[Install.AddReg]
+;HKLM,"Software\AMD\Install\South Bridge\PCI",DisplayName,,"AMD Interface"
+;HKLM,"Software\AMD\Install\South Bridge\PCI",Install,,"Success"
+
+;==================================================
+;                   64-bit
+;==================================================
+
+[AMD.Mfg.NTamd64]
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_14AC
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_14EC
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_150D
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_14DE
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1002&DEV_145A
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_14DC
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_1556
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_1116
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_1117
+%AMD.DeviceDesc0%  = AMDPCI64, PCI\VEN_1022&DEV_1136
+%AMD.DeviceDesc1%  = AMDPCI64, PCI\VEN_1022&DEV_790B
+%AMD.DeviceDesc23% = AMDPCI64, ACPI\AMDI0104
+
+
+[AMDPCI64]
+AddReg=Install.AddReg.NTamd64
+
+[AMDPCI64.Services]
+AddService = , 0x00000002
+
+[Install.AddReg.NTamd64]
+;HKLM,"Software\Wow6432Node\AMD\Install\South Bridge\PCI",DisplayName,,"AMD Interface"
+;HKLM,"Software\Wow6432Node\AMD\Install\South Bridge\PCI",Install,,"Success"
+
+;==================================================
+;                   Others
+;==================================================
+
+[SourceDisksNames]
+1 = %DiskId1%,,,
+
+[SourceDisksFiles]
+
+[Strings]
+AMD.DeviceDesc0  = "AMD PCI"
+AMD.DeviceDesc1  = "AMD SMBUS"
+AMD.DeviceDesc23 = "AMD Hetero Driver"
+
+DiskId1 = "AMD PCI Installation Disk"
+AMD = "Advanced Micro Devices, Inc"
