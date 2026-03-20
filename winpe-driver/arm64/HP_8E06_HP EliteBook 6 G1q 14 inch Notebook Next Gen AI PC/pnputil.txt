@@ -1,0 +1,647 @@
+﻿
+
+ClassGUID         : {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+ClassName         : AudioProcessingObject
+DriverName        : oem102.inf
+Status            : Started
+ManufacturerName  : QUALCOMM
+DeviceDescription : Qualcomm ASD Audio Proxy APO
+InstanceID        : SWD\DRIVERENUM\ASDProxyAPO&6&11e61f38&0
+
+ClassGUID         : {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+ClassName         : AudioProcessingObject
+DriverName        : oem47.inf
+Status            : Started
+ManufacturerName  : Microsoft Corporation
+DeviceDescription : Voice Clarity
+InstanceID        : SWD\DRIVERENUM\{96bedf2c-18cb-4a15-b821-5e95ed0fea61}#VocaEffectPack&1&23e33b7&0
+
+ClassGUID         : {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+ClassName         : AudioProcessingObject
+DriverName        : oem107.inf
+Status            : Started
+ManufacturerName  : QUALCOMM
+DeviceDescription : Qualcomm Audio Proxy APO
+InstanceID        : SWD\DRIVERENUM\{bf29f457-cbb5-40da-892a-6f0badc22bdc}#ProxyAPO&6&27b662eb&0
+
+ClassGUID         : {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+ClassName         : AudioProcessingObject
+DriverName        : oem89.inf
+Status            : Started
+ManufacturerName  : Microsoft Corporation
+DeviceDescription : Windows Studio Effects Voice Clarity APO
+InstanceID        : SWD\DRIVERENUM\{e39d28d8-f67c-4f19-aff7-3f146906737b}#mep_audio_component&3&21ce6fb&0
+
+ClassGUID         : {72631e54-78a4-11d0-bcf7-00aa00b7b32a}
+ClassName         : Battery
+DriverName        : oem109.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) Power Management Battery Miniclass Device
+InstanceID        : ACPI\QCOM0C2A\2&daba3ff&0
+
+ClassGUID         : {53d29ef7-377c-4d14-864b-eb3a85769359}
+ClassName         : Biometric
+DriverName        : oem252.inf
+Status            : Started
+ManufacturerName  : Synaptics Incorporated
+DeviceDescription : Synaptics FS7606 Touch Fingerprint Sensor with PurePrint(TM)
+InstanceID        : USB\VID_06CB&PID_0107\300de68caec2
+
+ClassGUID            : {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+ClassName            : Bluetooth
+DriverName           : oem110.inf
+ExtensionDriverNames : oem112.inf
+Status               : Started
+ManufacturerName     : Qualcomm Atheros Communications Inc.
+DeviceDescription    : Qualcomm(R) Bluetooth UART Transport Driver
+InstanceID           : ACPI\QCOM0C6B\2&daba3ff&0
+
+ClassGUID         : {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+ClassName         : Bluetooth
+DriverName        : oem113.inf
+Status            : Started
+ManufacturerName  : QUALCOMM
+DeviceDescription : Qualcomm(R) Aqstic(TM) BT ACX Transport Device
+InstanceID        : ACPI\QCOM0D04\0
+
+ClassGUID         : {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+ClassName         : Bluetooth
+DriverName        : oem114.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm FastConnect 6900 Bluetooth Adapter
+InstanceID        : QCA_SHB\UART_H4_HSP\3&2dba09c2&0&4097
+
+ClassGUID            : {ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
+ClassName            : Camera
+DriverName           : oem215.inf
+ExtensionDriverNames : oem92.inf
+Status               : Started
+ManufacturerName     : SunplusIT
+DeviceDescription    : HP FHD Camera
+InstanceID           : USB\VID_04F2&PID_B804&MI_00\5&38b2944&0&0000
+
+ClassGUID            : {f01a9d53-3ff6-48d2-9f97-c8a7004be10c}
+ClassName            : ComputeAccelerator
+DriverName           : oem165.inf
+ExtensionDriverNames : oem166.inf
+Status               : Started
+ManufacturerName     : Qualcomm Technologies, Inc.
+DeviceDescription    : Snapdragon(R) X - X126100 - Qualcomm(R) Hexagon(TM) NPU
+InstanceID           : ACPI\QCOM0D0A\2&daba3ff&0
+
+ClassGUID            : {4d36e968-e325-11ce-bfc1-08002be10318}
+ClassName            : Display
+DriverName           : oem140.inf
+ExtensionDriverNames : oem141.inf
+Status               : Started
+ManufacturerName     : Qualcomm Incorporated
+DeviceDescription    : Qualcomm(R) Adreno(TM) X1-45 GPU
+InstanceID           : ACPI\VEN_QCOM&DEV_0D17&SUBSYS_8E06103C&REV_002F\0
+
+ClassGUID         : {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+ClassName         : Firmware
+DriverName        : oem148.inf
+Status            : Started
+ManufacturerName  : HP Inc.
+DeviceDescription : HP X68 System Firmware
+InstanceID        : UEFI\RES_{ef9eeeed-6aa4-41d0-a0dc-e614fe284252}\0
+
+ClassGUID            : {4d36e96b-e325-11ce-bfc1-08002be10318}
+ClassName            : Keyboard
+DriverName           : oem234.inf
+ExtensionDriverNames : oem235.inf
+Status               : Started
+ManufacturerName     : HP Inc.
+DeviceDescription    : ARM Hotkey
+InstanceID           : HID\QTEC0001&Col01\3&96d8d27&0&0000
+
+ClassGUID         : {4d36e96c-e325-11ce-bfc1-08002be10318}
+ClassName         : MEDIA
+DriverName        : oem101.inf
+Status            : Started
+ManufacturerName  : QUALCOMM
+DeviceDescription : Qualcomm(R) Aqstic(TM) ACX Static Endpoints Audio Device
+InstanceID        : QCASD\StaticEndpointDevice0\5&1af37a39&0&0
+
+ClassGUID            : {4d36e96c-e325-11ce-bfc1-08002be10318}
+ClassName            : MEDIA
+DriverName           : oem108.inf
+ExtensionDriverNames : oem106.inf
+Status               : Started
+ManufacturerName     : QUALCOMM
+DeviceDescription    : Qualcomm(R) Aqstic(TM) Audio Adapter Device
+InstanceID           : AUCD\VEN_QCOM&DEV_0C29&SUBSYS_8E06103C\5&1339e12d&0&0
+
+ClassGUID            : {4d36e96c-e325-11ce-bfc1-08002be10318}
+ClassName            : MEDIA
+DriverName           : oem104.inf
+ExtensionDriverNames : oem105.inf
+Status               : Started
+ManufacturerName     : (Standard system devices)
+DeviceDescription    : Qualcomm(R) Aqstic(TM)
+InstanceID           : ADCM\VEN_QCOM&DEV_0CC1&SUBSYS_8E06103C\4&20600e2b&0&0
+
+ClassGUID         : {4d36e972-e325-11ce-bfc1-08002be10318}
+ClassName         : Net
+DriverName        : oem220.inf
+Status            : Started
+ManufacturerName  : Qualcomm Communications Inc.
+DeviceDescription : Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter
+InstanceID        : PCI\VEN_17CB&DEV_1103&SUBSYS_8D9A103C&REV_01\4&cdacdec&0&0000
+
+ClassGUID         : {4d36e972-e325-11ce-bfc1-08002be10318}
+ClassName         : Net
+DriverName        : oem73.inf
+Status            : Disabled
+ManufacturerName  : PaloAltoNetworks
+DeviceDescription : PANGP Virtual Ethernet Adapter Secure
+InstanceID        : ROOT\PANGPD\0000
+
+ClassGUID         : {4d36e972-e325-11ce-bfc1-08002be10318}
+ClassName         : Net
+DriverName        : oem46.inf
+Status            : Started
+ManufacturerName  : Realtek
+DeviceDescription : Realtek PCIe GbE Family Controller
+InstanceID        : PCI\VEN_10EC&DEV_8168&SUBSYS_8E06103C&REV_15\01000000684CE00000
+
+ClassGUID         : {5175d334-c371-4806-b3ba-71fd53c9258d}
+ClassName         : Sensor
+DriverName        : oem154.inf
+Status            : Started
+ManufacturerName  : Qualcomm
+DeviceDescription : Qualcomm Human Presence Sensor
+InstanceID        : ACPI\QCOM06D9\2&daba3ff&0
+
+ClassGUID            : {5175d334-c371-4806-b3ba-71fd53c9258d}
+ClassName            : Sensor
+DriverName           : oem184.inf
+ExtensionDriverNames : oem185.inf
+Status               : Started
+ManufacturerName     : Qualcomm
+DeviceDescription    : Qualcomm(R) All-Ways Aware(TM) Sensor Platform Device - Keyboard
+InstanceID           : ACPI\QCOM0694\2&daba3ff&0
+
+ClassGUID         : {5c4c3332-344d-483c-8739-259e934c9cc8}
+ClassName         : SoftwareComponent
+DriverName        : oem253.inf
+Status            : Started
+ManufacturerName  : HP
+DeviceDescription : HP Application Enabling Services
+InstanceID        : SWD\DRIVERENUM\{30e20916-51cc-469c-ad2d-eaeee7624b3b}#FusionSoftware.10.0...16299&3&6a84d0&0
+
+ClassGUID         : {5c4c3332-344d-483c-8739-259e934c9cc8}
+ClassName         : SoftwareComponent
+DriverName        : oem139.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) Display Services
+InstanceID        : SWD\DRIVERENUM\{480b97a2-ba58-47c4-9979-bc8d922cc830}#QCDPPSLibrary&3&38581d65&0
+
+ClassGUID         : {5c4c3332-344d-483c-8739-259e934c9cc8}
+ClassName         : SoftwareComponent
+DriverName        : oem237.inf
+Status            : Started
+ManufacturerName  : HP Inc.
+DeviceDescription : HP LAN/WLAN/WWAN Switching and Hotkey Service
+InstanceID        : SWD\DRIVERENUM\{9a196a35-8ad1-4819-b54a-c8c7acd7fc20}#HPHotkeySupportUWP.10.0...19041&4&18e7fe20&0
+
+ClassGUID         : {5c4c3332-344d-483c-8739-259e934c9cc8}
+ClassName         : SoftwareComponent
+DriverName        : oem90.inf
+Status            : Started
+ManufacturerName  : Microsoft Corporation
+DeviceDescription : Windows Studio Effects Camera
+InstanceID        : SWD\DRIVERENUM\{e39d28d8-f67c-4f19-aff7-3f146906737b}#mep_camera_component&3&21ce6fb&0
+
+ClassGUID         : {5c4c3332-344d-483c-8739-259e934c9cc8}
+ClassName         : SoftwareComponent
+DriverName        : oem224.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) QDCM Library
+InstanceID        : SWD\DRIVERENUM\QDCMLibrary&3&38581d65&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem88.inf
+Status            : Started
+ManufacturerName  : HP Inc.
+DeviceDescription : HP(R) Non-Volatile Memory Acccess Kernel Service Module
+InstanceID        : ACPI\HPIC001A\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem193.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Inc.
+DeviceDescription : Qualcomm(R) SPI Bus Device
+InstanceID        : ACPI\QCOM0C0E\b
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem194.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) SPMI Bus Device
+InstanceID        : ACPI\QCOM0C0B\1
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem195.inf
+Status            : Started
+ManufacturerName  : Qualcomm
+DeviceDescription : Qualcomm(R) SSG Secure Services Device
+InstanceID        : ACPI\QCOM06D8\0
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem196.inf
+ExtensionDriverNames : oem198.inf
+Status               : Started
+ManufacturerName     : Qualcomm Technologies, Incorporated
+DeviceDescription    : Qualcomm(R) Audio DSP Subsystem Device
+InstanceID           : ACPI\QCOM0C1B\2&daba3ff&0
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem197.inf
+ExtensionDriverNames : oem219.inf
+Status               : Started
+ManufacturerName     : Qualcomm Technologies, Incorporated
+DeviceDescription    : Qualcomm(R) Wlan Thermal Mitigation Device
+InstanceID           : ACPI\QCOM0CD5\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem201.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm System Cache Device
+InstanceID        : ACPI\VEN_QCOM&DEV_0C83&SUBSYS_CRD08380&REV_0001\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem202.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Incorporated
+DeviceDescription : Qualcomm(R) TFTP Device
+InstanceID        : ACPI\QCOM06DC\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem208.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Inc.
+DeviceDescription : Qualcomm(R) USB4(TM) Host Router Bus
+InstanceID        : ACPI\QCOM0C6D\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem206.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Inc.
+DeviceDescription : Qualcomm(R) Bus Device
+InstanceID        : ACPI\QCOM0C16\f
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem84.inf
+Status            : Started
+ManufacturerName  : CrowdStrike
+DeviceDescription : CrowdStrike Device Control Sensor Interface
+InstanceID        : ROOT\SYSTEM\0001
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem96.inf
+ExtensionDriverNames : oem94.inf
+Status               : Started
+ManufacturerName     : Qualcomm Technologies, Inc.
+DeviceDescription    : Qualcomm(R) Aqstic(TM) Audio DSP and Calibration Manager
+InstanceID           : ADSP\VEN_QCOM&DEV_0C22&SUBSYS_8E06103C\3&20f921fc&0&0
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem95.inf
+ExtensionDriverNames : oem97.inf
+Status               : Started
+ManufacturerName     : Qualcomm Technologies, Inc.
+DeviceDescription    : Qualcomm(R) Analog-to-Digital Converter Device
+InstanceID           : ACPI\QCOM0C11\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem93.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies Inc.
+DeviceDescription : Qualcomm(R) ACPI Bridge Device
+InstanceID        : ACPI\QCOM0427\0
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem41.inf
+ExtensionDriverNames : oem232.inf
+Status               : Started
+ManufacturerName     : HP
+DeviceDescription    : HP Application Driver
+InstanceID           : ACPI\HPIC000C\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem192.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies Inc.
+DeviceDescription : Qualcomm Secure Processor Device
+InstanceID        : ACPI\QCOM0C87\2&daba3ff&0
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem203.inf
+ExtensionDriverNames : oem204.inf
+Status               : Started
+ManufacturerName     : Qualcomm Inc.
+DeviceDescription    : Qualcomm(R) System Manager Device
+InstanceID           : ACPI\QCOM04DE\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem191.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) QcSocServiceKMDF Service
+InstanceID        : ACPI\QCOM0D18\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem181.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) System Manager SCM Device
+InstanceID        : ACPI\QCOM04DD\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem189.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm System MMU Device
+InstanceID        : ACPI\VEN_QCOM&DEV_0C09&SUBSYS_CRD08380&REV_0001\1
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem135.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) System Manager Device
+InstanceID        : ACPI\QCOM0C2F\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem136.inf
+Status            : Started
+ManufacturerName  : Qualcomm
+DeviceDescription : Qualcomm(R) Connection Security Device
+InstanceID        : ACPI\QCOM0CA8\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem137.inf
+Status            : Started
+ManufacturerName  : Qualcomm
+DeviceDescription : Qualcomm(R) DCF Device
+InstanceID        : ACPI\QCOM06E7\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem138.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) System Manager DiagRouter Device
+InstanceID        : ACPI\QCOM0C13\2&daba3ff&0
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem143.inf
+ExtensionDriverNames : oem144.inf
+Status               : Started
+ManufacturerName     : Qualcomm Inc.
+DeviceDescription    : Qualcomm(R) EVA Device
+InstanceID           : ACPI\QCOM0CF1\1e
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem146.inf
+ExtensionDriverNames : oem147.inf
+Status               : Started
+ManufacturerName     : Qualcomm Inc.
+DeviceDescription    : Qualcomm(R) Power Management FGBCL Device
+InstanceID           : ACPI\QCOM0C77\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem151.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm Shared Memory Port Device
+InstanceID        : ACPI\QCOM0C84\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem152.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Inc.
+DeviceDescription : Qualcomm(R) Bus Device
+InstanceID        : ACPI\QCOM0C88\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem153.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) System Manager GPIO Device
+InstanceID        : ACPI\QCOM0C0C\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem156.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) I2C Bus Device
+InstanceID        : ACPI\QCOM0C10\9
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem157.inf
+ExtensionDriverNames : oem158.inf
+Status               : Started
+ManufacturerName     : Qualcomm Inc.
+DeviceDescription    : Qualcomm(R) IOMMU Device
+InstanceID           : ACPI\QCOM068F\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem159.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) Inter Processor Communication Interrupt Device
+InstanceID        : ACPI\QCOM06C2\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem160.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) Data IPC Router Device
+InstanceID        : ACPI\QCOM0C0D\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem161.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) Bam Bus Device
+InstanceID        : ACPI\QCOM0C0A\5
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem167.inf
+ExtensionDriverNames : oem198.inf
+Status               : Started
+ManufacturerName     : Qualcomm Incorporated
+DeviceDescription    : Qualcomm(R) Protection Domain Service Registry Device
+InstanceID           : ACPI\VEN_QCOM&DEV_06DF&SUBSYS_CRD08380&REV_0008\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem168.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm Modem BCL Policy Device
+InstanceID        : ACPI\VEN_QCOM&DEV_0CFB&SUBSYS_CRD08380&REV_0100\0
+
+ClassGUID            : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName            : System
+DriverName           : oem169.inf
+ExtensionDriverNames : oem170.inf
+Status               : Started
+ManufacturerName     : Qualcomm Incorporated
+DeviceDescription    : Qualcomm(R) Peripheral Image Loader Device
+InstanceID           : ACPI\VEN_QCOM&DEV_06E0&SUBSYS_CRD08380&REV_0008\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem172.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) Power Management PMIC Device
+InstanceID        : ACPI\QCOM0C2B\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem173.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) Power Management PMIC Apps Device
+InstanceID        : ACPI\QCOM0C2C\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem175.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) Power Management PMIC GLink Device
+InstanceID        : ACPI\QCOM0C8E\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem176.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) System Manager PMIC GPIO Framework Extension Device
+InstanceID        : ACPI\QCOM0C2D\1
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem177.inf
+Status            : Started
+ManufacturerName  : (Standard system devices)
+DeviceDescription : Qualcomm(R) PCIe Platform Extension Plugin
+InstanceID        : ACPI\QCOM0C96\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem178.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) System Manager Device
+InstanceID        : ACPI\QCOM0C85\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem179.inf
+Status            : Started
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) Reset Power Error Notifier Device
+InstanceID        : ACPI\QCOM06E1\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem98.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Inc.
+DeviceDescription : Qualcomm(R) FastRPC Device
+InstanceID        : ACPI\QCOM0C5C\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem182.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) System Manager Secapp Device
+InstanceID        : ACPI\QCOM0CE4\0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem187.inf
+Status            : Stopped
+ManufacturerName  : Qualcomm Incorporated
+DeviceDescription : Qualcomm(R) Secure Kernel Extension
+InstanceID        : ACPI\QCOM0CAC\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem188.inf
+Status            : Started
+ManufacturerName  : Qualcomm Inc.
+DeviceDescription : Qualcomm(R) Slimbus Device
+InstanceID        : ADSP\VEN_QCOM&DEV_0C0F&SUBSYS_8E06103C\3&20f921fc&0&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem190.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies Inc.
+DeviceDescription : Qualcomm(R) SOC Partition Interface Device
+InstanceID        : ACPI\QCOM06DD\2&daba3ff&0
+
+ClassGUID         : {4d36e97d-e325-11ce-bfc1-08002be10318}
+ClassName         : System
+DriverName        : oem99.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Inc.
+DeviceDescription : Qualcomm(R) Audio RPC Daemon Device
+InstanceID        : ACPI\QCOM0C82\2&daba3ff&0
+
+ClassGUID         : {88bae032-5a81-49f0-bc3d-a4ff138216d6}
+ClassName         : USBDevice
+DriverName        : oem216.inf
+Status            : Started
+ManufacturerName  : Qualcomm Technologies, Inc.
+DeviceDescription : Qualcomm(R) USB Type-C Device
+InstanceID        : ACPI\QCOM0CA4\2&daba3ff&0
+
+
+

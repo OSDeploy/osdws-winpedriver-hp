@@ -1,0 +1,144 @@
+;
+; HpqKbFiltr.inf
+;
+; Installation inf for the HP Hotkey Support keyboard filter.
+;
+; Copyright 2020 HP Development Company, L.P.
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%Company%
+ClassGUID={4D36E96B-E325-11CE-BFC1-08002BE10318}
+Class=Keyboard
+CatalogFile=HpqKbFiltr.cat
+DriverVer = 02/14/2025,1.0.0.8
+PnpLockdown = 1
+
+;
+; Source file information
+;
+
+[SourceDisksNames]
+1 = %DiskId1%,,,
+
+[SourceDisksFiles]
+HpqKbFiltr.sys = 1
+
+[DestinationDirs]
+CopyFilterDriver.10.0...19041    = %DRIVER_DIR%
+
+;
+; Driver information
+;
+
+[Manufacturer]
+%Mfg%=HP,NTarm64.10.0...19041
+
+; For Windows 10
+[HP.NTarm64.10.0...19041]
+%DeviceDesc% = HID_Keyboard_Inst.NT, HID\QTEC0001&Col01
+
+
+; We need to target Hotkey driver only in the below enclosure type CHIDS.(Manufacturer + Enclosure Type)
+[TargetComputers]
+{f999e8e2-2bed-5ee7-85be-a69096b9544d} ; Notebook
+{9f133554-625d-5ba3-812f-304869fa0b95} ; Convertible
+{1e8fcf22-451c-5f85-9afc-c052c3898f9c} ; Detachable
+{43a89a7e-a980-5955-a78e-a203342321de} ; Tablet
+{36b24388-0e8a-5a9e-a34c-2dde38de6a67} ; divinity
+
+;
+; General installation section
+;
+
+[HID_Keyboard_Inst.NT]
+; perform port related actions from keyboard.inf
+Include=keyboard.inf
+Needs=STANDARD_Inst
+; Copy the driver over
+CopyFiles=CopyFilterDriver.10.0...19041
+
+; File sections
+;
+
+[CopyFilterDriver.10.0...19041]
+HpqKbFiltr.sys
+
+;
+; Service Installation
+;
+[HID_Keyboard_Inst.NT.Services]
+AddService = HpqKbFiltr,  ,HpqKbFiltr_Service_Inst
+; Install the port driver and mouclass from keyboard.inf
+Include=keyboard.inf
+Needs=STANDARD_Inst.Services
+
+[HpqKbFiltr_Service_Inst]
+DisplayName    = %HpqKbFiltr.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Keyboard Port
+ServiceBinary  = %12%\HpqKbFiltr.sys
+AddReg         = HpqKbFiltr.AddReg.NT
+
+[HID_Keyboard_Inst.NT.HW]
+; Add the device upper filter
+AddReg = HID_Keyboard_Inst.NT.HW.AddReg
+; run the directives need by the port driver
+Include=keyboard.inf
+Needs=STANDARD_Inst.HW
+
+[HID_Keyboard_Inst.NT.HW.AddReg]
+HKR,,"UpperFilters",0x00010008,"HpqKbFiltr"
+
+[HpqKbFiltr.AddReg.NT]
+; 
+; Information for Vista and later
+;
+
+;Number of Scan Codes to be checked
+HKLM,System\CurrentControlSet\Services\HpqKbFiltr\Parameters,MaxButtons,%REG_DWORD%,7
+
+; Details of Scan Code
+HKLM,System\CurrentControlSet\Services\HpqKbFiltr\Parameters,Buttons,%REG_BINARY%,\
+01,e0,00,00,31,01,00,00, 12,e0,00,00,31,01,00,00, 17,e0,00,00,31,01,00,00,\
+20,e0,00,00,ea,03,00,00, 2e,e0,00,00,e9,03,00,00, 30,e0,00,00,e8,03,00,00,\
+19,00,00,00,19,00,00,00
+
+[HID_Keyboard_Inst.NT.Wdf]
+KmdfService = HpqKbFiltr, kbfiltr_wdfsect
+
+[kbfiltr_wdfsect]
+KmdfLibraryVersion = 1.11
+
+[Strings]
+;
+; Non-Localizable Strings
+;
+
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+; Destination Folder for copy
+WINDOWS_DIR         = 10 ; %SystemRoot%
+SYSTEM32_DIR        = 11 ; %SystemRoot%\system32 
+DRIVER_DIR          = 12 ; %SystemRoot%\system32\drivers
+DRIVER_STORE        = 13 ; Driver package's Driver Store directory.
+INF_DIR             = 17 ; INF file directory
+SYSTEM_DIR          = 50 ; %SystemRoot%\system
+
+;
+; Localizable Strings
+;
+Mfg = "HP Inc."
+DeviceDesc = "ARM Hotkey" ;"Standard 101/102-Key or Microsoft Natural PS/2 Keyboard for HP Hotkey Support"
+DiskId1 = "HpqKbFilter Driver Disk #1"
+HP  = "ARM Hotkey" ;"Standard 101/102-Key or Microsoft Natural PS/2 Keyboard for HP Hotkey Support"
+HpqKbFiltr.SvcDesc="HpqKbFilter Driver"
+Company = "HP Development Company, L.P."

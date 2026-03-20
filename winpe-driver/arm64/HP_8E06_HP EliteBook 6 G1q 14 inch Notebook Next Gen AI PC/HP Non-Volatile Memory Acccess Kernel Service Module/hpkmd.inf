@@ -1,0 +1,62 @@
+;
+; hpkmd.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %ManufacturerName%
+CatalogFile = hpkmd.cat
+DriverVer = 09/04/2024,15.33.28.493
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+hpkmd.sys = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Standard,NTARM64.10.0...16299 ; %13% support introduced in build 16299
+
+[Standard.NTARM64.10.0...16299]
+%hpkmd.DeviceDesc% = hpkmd_Device, ACPI\HPIC001A
+
+[hpkmd_Device.NT]
+CopyFiles = File_Copy
+
+[File_Copy]
+hpkmd.sys
+
+;-------------- Service installation
+[hpkmd_Device.NT.Services]
+AddService = hpkmd,%SPSVCINST_ASSOCSERVICE%, hpkmd_Service_Inst
+
+; -------------- hpkmd driver install sections
+[hpkmd_Service_Inst]
+DisplayName    = %hpkmd.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\hpkmd.sys
+
+[hpkmd_Device.NT.Wdf]
+KmdfService = hpkmd, hpkmd_wdfsect
+
+[hpkmd_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName	= "HP Inc."
+DiskName			= "HP(R) Non-Volatile Memory Acccess Kernel Service Installation Disk"
+hpkmd.DeviceDesc	= "HP(R) Non-Volatile Memory Acccess Kernel Service Module"
+hpkmd.SVCDESC		= "HP(R) Non-Volatile Memory Acccess Kernel Service"

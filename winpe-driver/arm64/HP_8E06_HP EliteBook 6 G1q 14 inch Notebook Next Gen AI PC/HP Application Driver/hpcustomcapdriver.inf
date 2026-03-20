@@ -1,0 +1,159 @@
+;
+; hpcustomcapdriver.inf
+;
+; Installs the HP Application Driver
+;
+; Copyright(c) 2018, HP Development Company, L.P.All rights reserved.
+; This software contains confidential and proprietary information of HP.
+; The user of this software agrees not to disclose, disseminate or copy
+; such Confidential Information and shall use the software only in accordance
+; with the terms of the license agreement the user entered into with HP.
+;
+
+[Version]
+Signature           = $Windows NT$
+Class               = System
+ClassGuid           = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider            = %Company%
+CatalogFile.ntamd64 = hpcustomcapdriverx64.cat
+CatalogFile.ntx86   = hpcustomcapdriverx86.cat
+CatalogFile.ntarm64   = hpcustomcapdriverarm64.cat
+DriverVer           = 03/28/2024,1.66.3710.0
+PnpLockdown         = 1
+
+;======================= Device Install Section========================
+
+[DestinationDirs]
+EXE.CopyList.ntamd64.10.0...16299= 13, x64
+EXE.CopyList.ntx86.10.0...16299= 13, x86
+EXE.CopyList.ntarm64.10.0...16299= 13, ARM64
+
+[Manufacturer]
+%Mfg% = HP,ntamd64.10.0...16299,ntx86.10.0...16299,ntarm64.10.0...16299
+
+;======================= Device Install x64 Section ========================
+
+[HP.ntamd64.10.0...16299]
+%DeviceDesc% = hpcustomcapdriver_Install.ntamd64, ACPI\HPIC0003
+%DeviceDesc% = hpcustomcapdriver_Install.ntamd64, ACPI\HPIC000C
+%DeviceDesc% = hpcustomcapdriver_Install.ntamd64, ACPI\HPIC0016
+
+[hpcustomcapdriver_Install.ntamd64]
+CopyFiles = EXE.CopyList.ntamd64.10.0...16299
+
+[SourceDisksNames.amd64]
+1 = %DiskId%, , , \x64
+
+[SourceDisksFiles.amd64]
+hpcustomcapdriver.sys = 1
+
+[EXE.CopyList.ntamd64.10.0...16299]
+hpcustomcapdriver.sys, , %COPYFLG_FORCE_FILE_IN_USE%
+
+[hpcustomcapdriver_Install.ntamd64.Services]
+AddService = HPCustomCapDriver, 0x00000002, HPCustomCapDriver_Service_Inst64, 
+
+[HPCustomCapDriver_Service_Inst64]
+DisplayName    = %HPCustomCapDriverDesc%
+ServiceType    = 0x00000001
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+LoadOrderGroup = "AudioGroup"
+ServiceBinary  = %13%\x64\hpcustomcapdriver.sys
+Dependencies   = 
+
+;======================= Device Install x86 Section ========================
+
+[HP.ntx86.10.0...16299]
+%DeviceDesc% = hpcustomcapdriver_Install.ntx86, ACPI\HPIC0003
+%DeviceDesc% = hpcustomcapdriver_Install.ntx86, ACPI\HPIC000C
+%DeviceDesc% = hpcustomcapdriver_Install.ntx86, ACPI\HPIC0016
+
+[hpcustomcapdriver_Install.ntx86]
+CopyFiles = EXE.CopyList.ntx86.10.0...16299
+
+[SourceDisksNames.x86]
+1 = %DiskId%, , , \x86
+
+[SourceDisksFiles.x86]
+hpcustomcapdriver.sys = 1
+
+[EXE.CopyList.ntx86.10.0...16299]
+hpcustomcapdriver.sys, , %COPYFLG_FORCE_FILE_IN_USE%
+
+[hpcustomcapdriver_Install.ntx86.Services]
+AddService = HPCustomCapDriver, 0x00000002, HPCustomCapDriver_Service_Inst86, 
+
+[HPCustomCapDriver_Service_Inst86]
+DisplayName    = %HPCustomCapDriverDesc%
+ServiceType    = 0x00000001
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+LoadOrderGroup = "AudioGroup"
+ServiceBinary  = %13%\x86\hpcustomcapdriver.sys
+Dependencies   = 
+
+;======================= Device Install ARM64 Section ========================
+
+[HP.ntarm64.10.0...16299]
+%DeviceDesc% = hpcustomcapdriver_Install.ntarm64, ACPI\HPIC0003
+%DeviceDesc% = hpcustomcapdriver_Install.ntarm64, ACPI\HPIC000C
+%DeviceDesc% = hpcustomcapdriver_Install.ntarm64, ACPI\HPIC0016
+
+[hpcustomcapdriver_Install.ntarm64]
+CopyFiles = EXE.CopyList.ntarm64.10.0...16299
+
+[SourceDisksNames.arm64]
+1 = %DiskId%, , , \ARM64
+
+[SourceDisksFiles.arm64]
+hpcustomcapdriver.sys = 1
+
+[EXE.CopyList.ntarm64.10.0...16299]
+hpcustomcapdriver.sys, , %COPYFLG_FORCE_FILE_IN_USE%
+
+[hpcustomcapdriver_Install.ntarm64.Services]
+AddService = HPCustomCapDriver, 0x00000002, HPCustomCapDriver_Service_InstArm64, 
+
+[HPCustomCapDriver_Service_InstArm64]
+DisplayName    = %HPCustomCapDriverDesc%
+ServiceType    = 0x00000001
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+LoadOrderGroup = "AudioGroup"
+ServiceBinary  = %13%\ARM64\hpcustomcapdriver.sys
+Dependencies   = 
+
+[Strings]
+Mfg = "HP"
+DiskId = "Install disk (1)"
+Company = "HP Inc."
+DeviceDesc = "HP Application Driver"
+HPCustomCapDriverDesc = "HP Application Driver"
+
+;
+; The "standard" defines
+;
+REG_EXPAND_SZ = 0x00020000
+REG_DWORD = 0x00010001
+SERVICE_BOOT_START = 0x00000000
+SERVICE_SYSTEM_START = 0x00000001
+SERVICE_AUTO_START = 0x00000002
+SERVICE_DEMAND_START = 0x00000003
+SERVICE_DISABLED = 0x00000004
+SERVICE_ERROR_IGNORE = 0x00000000
+SERVICE_ERROR_NORMAL = 0x00000001
+SERVICE_ERROR_SEVERE = 0x00000002
+SERVICE_ERROR_CRITICAL = 0x00000003
+COPYFLG_WARN_IF_SKIP = 0x00000001
+COPYFLG_NOSKIP = 0x00000002
+COPYFLG_NOVERSIONCHECK = 0x00000004
+COPYFLG_FORCE_FILE_IN_USE = 0x00000008
+COPYFLG_NO_OVERWRITE = 0x00000010
+COPYFLG_NO_VERSION_DIALOG = 0x00000020
+COPYFLG_OVERWRITE_OLDER_ONLY = 0x00000040
+COPYFLG_REPLACEONLY = 0x00000400
+COPYFLG_NODECOMP = 0x00000800
+COPYFLG_REPLACE_BOOT_FILE = 0x00001000
+COPYFLG_NOPRUNE = 0x00002000
+COPYFLG_IN_USE_RENAME = 0x00004000
